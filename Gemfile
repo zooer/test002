@@ -1,4 +1,8 @@
-source 'http://ruby.taobao.org'
+if ENV['USE_OFFICIAL_GEM_SOURCE']
+  source 'https://rubygems.org'
+else
+  source 'https://ruby.taobao.org'
+end
 
 gem 'devise', github: "plataformatec/devise"
 
